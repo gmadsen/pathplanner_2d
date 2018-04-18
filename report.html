@@ -1,0 +1,99 @@
+
+
+
+<html>  <!-- html tag marking the start of the HTML document -->
+<body>  <!-- body tag marking the start of the body of the document -->
+
+<!--
+
+
+
+-->
+
+<!-- say your name big as a section header -->
+<h1>Garrett Madsen</h1>
+
+<!-- say something smaller as paragraph text -->
+Project 1 Report
+
+<!-- start a new paragraph -->
+
+
+<h2> Empty Map</h2>
+<img src="results/empty_DFS.PNG" alt="HTML5 Icon" style="width:500px;height:500px;">
+<img src="results/empty_bfs.PNG" alt="HTML5 Icon" style="width:500px;height:500px;">
+<img src="results/empty_gbf.PNG" alt="HTML5 Icon" style="width:500px;height:500px;">
+<img src="results/empty_astar.PNG" alt="HTML5 Icon" style="width:500px;height:500px;">
+
+<p>
+  In the empty map , The greedy-best-first search is clearly the most effictient choice
+  for both computation and finding the shortest path. Since there is no obstructions, the algorithm is able to move efficiently torward the
+    goal at each iteration. While depth-first search used the second least amount of iterations, it also produces an extremely inefficiently goal path. breadth-first and A*
+    both find the shortest path, but A* does it in less iterations due to the f-score weight.
+</p>
+
+
+
+<h2> Misc Map</h2>
+<img src="results/misc_DFS.PNG" alt="HTML5 Icon" style="width:500px;height:500px;">
+<img src="results/misc_bfs.PNG" alt="HTML5 Icon" style="width:500px;height:500px;">
+<img src="results/misc_gbf.PNG" alt="HTML5 Icon" style="width:500px;height:500px;">
+<img src="results/misc_astar.PNG" alt="HTML5 Icon" style="width:500px;height:500px;">
+
+<p>
+  The Misc map shows a variety of obstacles in different sizes and border connections. The low goal node with a large border-connected obstacle shows the limitation
+  of relying on l2 distance norms too heavily. Both A* and greedy-best-first fill nearly the entire left side before overcoming the right obstacle.
+</p>
+
+<h2> Narrow 1 Map</h2>
+<img src="results/narrow1_DFS.PNG" alt="HTML5 Icon" style="width:500px;height:500px;">
+<img src="results/narrow1_bfs.PNG" alt="HTML5 Icon" style="width:500px;height:500px;">
+<img src="results/narrow1_gbf.PNG" alt="HTML5 Icon" style="width:500px;height:500px;">
+<img src="results/narrow1_astar.PNG" alt="HTML5 Icon" style="width:500px;height:500px;">
+
+<p>
+
+</p>
+
+<h2> Narrow 2</h2>
+<img src="results/narrow2_DFS.PNG" alt="HTML5 Icon" style="width:500px;height:500px;">
+<img src="results/narrow2_bfs.PNG" alt="HTML5 Icon" style="width:500px;height:500px;">
+<img src="results/narrow2_gbf.PNG" alt="HTML5 Icon" style="width:500px;height:500px;">
+<img src="results/narrow2_astar.PNG" alt="HTML5 Icon" style="width:500px;height:500px;">
+
+<p>
+Sine the goal is within a line of sight of the path needed, the greedy-best-first does extremely well . predictable behavior is seem with dfs, which has fairly low
+iterations, but a terrible path length. BFS finds the minimum path, but over many iterations, and A* does the same, except with less iterations.
+</p>
+
+<h2> Three Sections Map</h2>
+<img src="results/three_sections_DFS.PNG" alt="HTML5 Icon" style="width:500px;height:500px;">
+<img src="results/three_sections_bfs.PNG" alt="HTML5 Icon" style="width:500px;height:500px;">
+<img src="results/three_sections_gbf.PNG" alt="HTML5 Icon" style="width:500px;height:500px;">
+<img src="results/three_sections_astar.PNG" alt="HTML5 Icon" style="width:500px;height:500px;">
+
+<p>
+
+</p>
+
+<h2> A* and greedy-best-first Comparison</h2>
+<p>
+Of particular interest, is the comparison of A* and greedy-best-first. A* is guaranteed to find the optimal path, while greedy-best-first does
+not have this characteristic, instead sacrificing path optimality for increased iteration efficiency. This can be seen in multiple goal configurations shown.
+</p>
+
+<p>
+The same type of relationship is found with BFS and DFS. BFS is a compete algorithm and is guaranteed to find the optimal path, but does so by completely filling the nodes,
+thus making it have many iterations. On the other hand, DFS is not guaranteed to be optimal, and in many cases, it produces an extremely long tree length. DFS can finish
+faster in many cases that the other algorithms, but the cost is often an extremely sub-optimal path length.
+
+</p>
+
+<img src="results/misc_gbf.PNG" alt="HTML5 Icon" style="width:500px;height:500px;">
+<img src="results/misc_astar.PNG" alt="HTML5 Icon" style="width:500px;height:500px;">
+<img src="results/misc_gbf_2.PNG" alt="HTML5 Icon" style="width:500px;height:500px;">
+<img src="results/misc_astar_2.PNG" alt="HTML5 Icon" style="width:500px;height:500px;">
+
+
+</body>
+</html>
